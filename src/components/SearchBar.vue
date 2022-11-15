@@ -4,7 +4,7 @@
             type="text" 
             name="search-query-tag" 
             id="searchQueryTextBox" 
-            placeholder="Some search query goes here..."
+            placeholder="search query here..."
             @input="onSearchQueryInput" />
     </div>
 </template>
@@ -20,7 +20,6 @@ export default {
                     searchQuery: event.target.value
                 }
             );
-            console.log(event.target.value);
         }
     }
 }
