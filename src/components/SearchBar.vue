@@ -14,6 +14,12 @@ export default {
     name: 'SearchBar',
     methods: {
         onSearchQueryInput(event) {
+            this.$emit(
+                'searchQueryChangeEvent', 
+                {
+                    searchQuery: event.target.value
+                }
+            );
             console.log(event.target.value);
         }
     }
