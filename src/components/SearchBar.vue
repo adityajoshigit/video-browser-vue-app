@@ -15,7 +15,7 @@ export default {
     methods: {
         onSearchQueryInput(event) {
             this.$emit(
-                'searchQueryChangeEvent', 
+                'searchQueryChange', 
                 {
                     searchQuery: event.target.value
                 }
